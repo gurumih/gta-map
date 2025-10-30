@@ -113,7 +113,7 @@ export default function MapContainer({ markers, onAddMarker, onRemoveMarker, foc
       <ZoomControl position="topright" />
       
       <TileLayer
-        url="/tiles/styleAtlas/{z}/{x}/{y}.jpg"
+        url={`${import.meta.env.BASE_URL}tiles/styleAtlas/{z}/{x}/{y}.jpg`}
         attribution=''
         minZoom={0}
         maxZoom={5}
